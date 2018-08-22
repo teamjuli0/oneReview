@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(../images/background.jpg);
+    background-size: 200%;
+  
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#aboutUs {
+    width: 75%;
+    margin: auto;
+    padding: 50px;
+    line-height: 20px;
+    background-color: #99CCEE;
+}
+
+#productInfo{
+    line-height: 20px;
+}
+
+#empty-html {
+    color: white;
+}
+
+#error-html {
+    color: white;
+}
+
+#whole-page {
+    padding: 20px;
+    border: 50px solid #99CCEE;
+    background-color: #ffffff;
+}
+
+.memberDescription {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.teamCards {
+    margin: 0px!important;
+    padding: 0px!important;
+}
+
+.uk-input, .uk-form-width-small {
+    text-align: center;
+    width: 200px !important;
+}
+
+.uk-navbar-item {
+    color: black !important;
+}
+
+.uk-active {
+   text-align: center;
+}
