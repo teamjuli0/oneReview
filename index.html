@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RayRay</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- WalmartJS -->
+    <script src="assets/javascript/walmartApp.js"></script>
+
+    <!-- <script src="assets/javascript/youtubeApp.js"></script> -->
+    <script src="assets/javascript/working-YouTube.js"></script>
+
+</head>
+
+<body>
+
+
+    
+
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <div class="uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo" href="index.html">RayRay</a>
+
+            <ul class="uk-navbar-nav">
+
+
+                <li>
+                    <a href="index.html">
+                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span>
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="testimonial.html">
+                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                        Testimonials
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class="uk-navbar-right">
+            <div class="uk-navbar-item">
+                <form id="youTubeForm">
+                    <input class="uk-input uk-form-width-small" id="productInput" type="text" placeholder="SEARCH FOR PRODUCTS">
+                    <button class="uk-button uk-button-default" id="searchButton">GO!</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="uk-container">
+
+        <div class="uk-flex-center uk-text-center" id="error-page"></div>
+
+        <br>
+        <br>
+
+        <div id="whole-page">
+
+            <div uk-switcher="animation: uk-animation-fade">
+                <button class="uk-button uk-button-default" type="button">Product Info</button>
+                <button class="uk-button uk-button-default" type="button">Review Video</button>
+            </div>
+
+            <br>
+
+            <ul class="uk-switcher uk-margin">
+
+
+                <li>
+                    <div id="productInfo"></div>
+                </li>
+
+
+                <li>
+                    <div id="testplayer"></div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div id="aboutUs">
+            <div class="uk-grid-small uk-child-width-1-2@s uk-flex-center uk-text-center teamCards" uk-grid>
+
+
+                <!--JED-->
+                <div class="uk-card uk-card-default uk-width-1-2@m teamCards">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="assets/images/Jed.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Jed</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+                        <p>Jed works at the Apple Store because he's better than everybody.</p>
+                        <p class="memberDescription">Developed the index page that displays user search results on the page utilizing the Walmart and
+                            YouTube APIs.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--LILO-->
+                <div class="uk-card uk-card-default uk-width-1-2@m teamCards">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="assets/images/Lilo.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Lilo</h3>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+                        <p>Lilo doesn't eat real food, he lives off of Red Bulls and $4 burritos.</p>
+                        <p class="memberDescription">Developed the testimonials page with data retention utilizing the Firebase database. Optimized Web App Performance and UI Improvements.</p>
+                    </div>
+                </div>
+
+
+                <!--RAY-->
+                <div class="uk-card uk-card-default uk-width-1-2@m teamCards">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="assets/images/ray.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Ray</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+                        <p>Ray fought over 9000 buffalos with his bare hands.</p>
+                        <p class="memberDescription">Developed the html page for the user testimonials page. Working on future updates. Helped fix crucial
+                            JSONP bug.</p>
+                    </div>
+                </div>
+
+
+                <!--JASMINE-->
+                <div class="uk-card uk-card-default uk-width-1-2@m teamCards">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="assets/images/Jasmine.jpg">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Jasmine</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+                        <p>Jasmine still listens to Hawthorne Heights and essentially has the music taste of a middle schooler.
+                        </p>
+                        <p class="memberDescription">Developed the front-end CSS, working with the UI-Kit.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
