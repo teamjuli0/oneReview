@@ -1,62 +1,44 @@
-* {
-    box-sizing: border-box;
-}
+ * {
+   box-sizing: border-box !important;
+ }
 
-html {
-    background-image: url(../images/background.jpg);
-    background-size: 200%;
-  
-}
+ body {
+   background: url('../pictures/background.jpg') 50% 0 no-repeat;
+   display: block;
+   position: relative;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+ }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
+ #mainContent {
+   margin-top: 3vh;
+   margin-bottom: 3vh;
+   border: 2vh solid rgb(180, 174, 144);
+  background-color: #ffffff;
+  border-radius: 2vh;
+  width: 90%;
+ }
 
-#aboutUs {
-    width: 75%;
-    margin: auto;
-    padding: 50px;
-    line-height: 20px;
-    background-color: #99CCEE;
-}
+ #testplayer {
+   max-height: 100%;
+   max-width: 100%;
+ }
 
-#productInfo{
-    line-height: 20px;
-}
+ #youtubePlayer {
+   margin: auto;
+   margin-top: 1vh;
+ }
 
-#empty-html {
-    color: white;
-}
-
-#error-html {
-    color: white;
-}
-
-#whole-page {
-    padding: 20px;
-    border: 50px solid #99CCEE;
-    background-color: #ffffff;
-}
-
-.memberDescription {
-    font-style: italic;
-    font-size: 15px;
-}
-
-.teamCards {
-    margin: 0px!important;
-    padding: 0px!important;
-}
-
-.uk-input, .uk-form-width-small {
-    text-align: center;
-    width: 200px !important;
-}
-
-.uk-navbar-item {
-    color: black !important;
-}
-
-.uk-active {
+ #searchCardLarge {
+   margin: auto;
    text-align: center;
-}
+   margin-top: 20vh;
+   width: 60%;
+ }
+
+ .centerThis {
+   margin: auto;
+   text-align: center;
+ }
